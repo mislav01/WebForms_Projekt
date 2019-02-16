@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pocetna.Master.cs" Inherits="WebFormsMislavBasic.Pocetna" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="content/toastr.css" rel="stylesheet" />
+    <link href="content/bootstrap.min.css" rel="stylesheet">
+    <link href="content/mojCSS.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/toastr.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server" id="body">
+    <form id="forma" runat="server">
+        <div class="container myContainer">
+            <div>
+                <span class="myTitle"><%:Page.Title %></span>
+                <div class="myButtons">
+                    <asp:Button ID="btnUser" runat="server" CssClass="btn btn-success" CausesValidation="false" OnClick="btnUser_Click"/>
+                    <asp:LinkButton ID="btnLogOut" runat="server" Text="Logout" CssClass="btn btn-warning" CausesValidation="false" OnClick="btnLogOut_Click" />
+                </div>
+            </div>
+
+            <hr style="margin-top: 5px" />
+
+            <nav>
+                <ul>
+                    <li>
+                        <asp:LinkButton ID="btnAddNewPerson" runat="server" CssClass="btn btn-default" CausesValidation="false" OnClick="btnAddNewPerson_Click">
+                            <span class="glyphicon glyphicon-floppy-save"></span>
+                            Add new person
+                        </asp:LinkButton>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="btnEditData" runat="server" CssClass="btn btn-default" CausesValidation="false" OnClick="btnEditData_Click">
+                            <span class="glyphicon glyphicon-share"></span>
+                            Edit data
+                        </asp:LinkButton>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="btnPersonList" runat="server" CssClass="btn btn-default" CausesValidation="false" OnClick="btnPersonList_Click">
+                            <span class="glyphicon glyphicon-list"></span>
+                            Person list
+                        </asp:LinkButton>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="btnSetup" runat="server" CssClass="btn btn-default" CausesValidation="false" OnClick="btnSetup_Click">
+                            <span class="glyphicon glyphicon-cog"></span>
+                            Setup
+                        </asp:LinkButton>
+                    </li>
+                </ul>
+            </nav>
+            <hr />
+
+            <asp:ContentPlaceHolder ID="Content" runat="server"></asp:ContentPlaceHolder>
+
+            <hr />
+            <footer>
+                <p>
+                    <asp:Label runat="server" ID="lblFooter" />
+                </p>
+                <p>
+                    <asp:Label runat="server" ID="lblRepoInfo" class="badge repoInfo" />
+                </p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

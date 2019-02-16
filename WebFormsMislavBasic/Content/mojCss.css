@@ -1,0 +1,100 @@
+﻿body {
+    font-family: 'Segoe UI';
+    background-color: #efefef;
+}
+
+.myContainer {
+    margin-top: 30px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.formContainer {
+    margin: auto;
+    padding: 20px;
+}
+
+.myTitle {
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.myButtons {
+    float: right;
+}
+
+.myValidators {
+    font-weight: bold;
+    color:red;
+}
+
+.validationSummary {
+    margin-top: 30px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.myPerson {
+    margin: 10px;
+    float: left;
+    width: 310px;
+    padding: 10px;
+    border: 1px solid #dedede;
+}
+
+.form-control {
+    margin: 5px 5px 5px 5px;
+}
+
+div {
+    display: block;
+}
+
+.myPerson1 {
+    margin: auto;
+    float: none;
+    width: 310px;
+    padding: 10px;
+    border: 1px solid #dedede;
+}
+
+nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+nav > ul > li > a {
+    width: 160px;
+}
+
+nav > ul > li > a > span {
+    margin-right: 5px;
+}
+
+
+
+footer {
+    text-align:center;
+}
+
+.repoInfo {
+    border-radius: 3px;
+}
+
+
+.tablicaOsobe {
+    color: Black;
+    background-color: White;
+    border-color: #CCCCCC;
+    border-width: 1px;
+    border-style: None;
+    border-collapse: collapse;
+}
